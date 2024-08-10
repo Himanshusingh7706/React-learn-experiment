@@ -4,5 +4,5 @@ const Landing = () => {
         <div>Landing page </div>
     )
 }
-// himanshu Singh
+
 export default Landing

@@ -1,4 +1,6 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contextapi from "../src/Components/Contextapi"
+import Landing from "./Components/Landing";
 // import { useState } from "react";
 // const App = () => {
 //   const [todos, setTodos] = useState([{
@@ -216,10 +218,21 @@
 /// USECall Back
 function App() {
   return (
-    <div>
+    <>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/dasboard" element={<Contextapi />} />
+          <Route path="/landing" element={<Landing />} />
 
 
-    </div>
+        </Routes>
+
+
+
+      </BrowserRouter>
+
+    </>
   )
 }
 
